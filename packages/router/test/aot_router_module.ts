@@ -1,0 +1,36 @@
+import {Component, NgModule} from '@angular/core';
+import {RouterModule, Routes} from '..';
+
+@Component({
+  selector: 'aot-router',
+  template: '<router-outlet></router-outlet>',
+})
+export class AotRouterCmp {
+}
+
+@Component({
+  selector: 'aot-router-child',
+  template: 'arc',
+})
+export class AotRouterChildCmp {
+}
+
+export const ROUTES: Routes = [
+  {path: '', component: AotRouterChildCmp},
+];
+
+@NgModule({
+  declarations: [
+    AotRouterCmp,
+    AotRouterChildCmp,
+  ],
+  exports: [
+    AotRouterCmp,
+    AotRouterChildCmp,
+  ],
+  imports: [
+    RouterModule.forRoot(ROUTES),
+  ],
+})
+export class AotRouterModule {
+}

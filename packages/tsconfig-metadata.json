@@ -12,6 +12,7 @@
     "compiler/test",
     "compiler-cli/integrationtest",
     "platform-server/integrationtest",
+    "router/test/aot_router_bootstrap.spec.ts",
     "common/locales",
     "examples",
     "**/*_spec.ts",
