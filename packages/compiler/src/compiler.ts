@@ -56,7 +56,7 @@ export {PipeResolver} from './pipe_resolver';
 export {NgModuleResolver} from './ng_module_resolver';
 export {DEFAULT_INTERPOLATION_CONFIG, InterpolationConfig} from './ml_parser/interpolation_config';
 export * from './schema/element_schema_registry';
-export * from './i18n';
+export * from './i18n/index';
 export * from './directive_normalizer';
 export * from './expression_parser/ast';
 export * from './expression_parser/lexer';
